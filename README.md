@@ -82,7 +82,7 @@ Si se obtiene verde en el protocolo UDP, se podrá pasar a añadir una cuenta (a
 
 La configuración es tan simple como colocar la IP de la Raspberry Pi en el campo _Domain_ el user name coincide con la extensión y el _Password_ registrado anteriormente en la consola de administración de FreePBX.
 
-> [!TODO]
+> [!NOTE]
 > Colocar imagen de zoiper funcionando
 
 Cuando la aplicación se conecte con el servidor, aparecerá el símbolo de ok en color verde pudiendo hacer y recibir llamadas.
