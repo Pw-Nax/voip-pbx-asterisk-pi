@@ -70,7 +70,7 @@ Tras pulsar el botón de Submit. Esta nueva entrada se añadió a la lista de ex
 
 ## Softphone
 
-<img src="./img/zoiper_start.png" width=200 align="left" />
+<img src="./img/zoiper_start.jpg" width=170 align="left" />
 
 Para este caso se escogió instalar Zoiper, en equipos celulares.
 
@@ -78,13 +78,16 @@ Tras ejecutar el programa y aceptar su uso bajo licencia o libre, se solicitó l
 
 Si se obtiene verde en el protocolo UDP, se podrá pasar a añadir una cuenta (account) desde el botón `Add`.
 
-![Configuracion de Zoiper](img/zoiper_conf.png)
-
 La configuración es tan simple como colocar la IP de la Raspberry Pi en el campo _Domain_ el user name coincide con la extensión y el _Password_ registrado anteriormente en la consola de administración de FreePBX.
 
 > [!NOTE]
 > Colocar imagen de zoiper funcionando
 
-Cuando la aplicación se conecte con el servidor, aparecerá el símbolo de ok en color verde pudiendo hacer y recibir llamadas.
+Cuando la aplicación se conecte con el servidor, aparecerá el símbolo de ok en color verde pudiendo enviar y recibir llamadas.
 
 El registro de todas las llamadas queda reflejado en la parte derecha de la aplicación.
+
+# Casos de prueba
+
+> [!NOTE]
+> Completar
