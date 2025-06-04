@@ -4,12 +4,12 @@
 
 ## Facultad de Ciencias Exactas, Físicas y Naturales
 
-### Sistemas de Comunicaciones Telefónicas 
-### Central Telefónica VoIP con Raspberry Pi 
+### Sistemas de Comunicaciones Telefónicas.
+### Central Telefónica VoIP con Raspberry Pi.
 
 </center>
 
----
+-------
 
 ### Grupo: <strong> Transmitiendo Facts </strong>
 
