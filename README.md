@@ -24,6 +24,24 @@
 
 En la actualidad, las comunicaciones basadas en tecnología VoIP (Voice over IP) han revolucionado la forma en que se transmiten las llamadas telefónicas, permitiendo reducir costos, mejorar la flexibilidad y facilitar la integración con otros sistemas informáticos. Este informe describe la implementación de una central VoIP basada en Asterisk y FreePBX sobre una plataforma Raspberry Pi, un dispositivo de bajo costo y consumo energético. El sistema instalado permite gestionar comunicaciones internas y externas mediante el uso del protocolo SIP (Session Initiation Protocol), incluyendo la configuración de un servidor proxy y el registro de extensiones SIP para la realización de llamadas entre usuarios locales y hacia el exterior.
 
+# Esquema general
+
+![Esquema de la red](img/diagrama_red.jpg)
+
+- **Router**:
+Es el centro de la red local, donde se conectan todos los dispositivos (por cable o Wi-Fi). Asigna IPs a todos los dispositivos por DHCP.
+
+- **Servidor PBX**
+Es un servidor donde está instalado RasPBX (Asterisk + FreePBX). Se conecta al router y forma parte de la red local. Es el que gestiona las llamadas, extensiones y servicios telefónicos.
+
+Teléfono SIP (computadora + softphone)
+Es un dispositivo (una PC) que utiliza un programa (como Zoiper, MicroSIP o Linphone) para actuar como teléfono SIP.
+Se conecta al router y se registra como extensión en el servidor PBX.
+
+Teléfono IP (posiblemente un smartphone): Es un teléfono (puede ser físico o una app en un celular como Zoiper o Linphone).
+
+Si conectás el PBX a un proveedor VoIP, podrías hacer llamadas externas (opcional).
+
 # Instalacion de FreePBX
 
 Se descargó la imagen ISO de FreePBX de la [página oficial](https://www.freepbx.org/sngfd12/) y luego se lamontó en una tarjeta SD mediante el software Raspberry Pi Imager.
@@ -68,6 +86,8 @@ En el formulario de la configuración de la extensión, sólo se tuvo que rellen
 
 Tras pulsar el botón de Submit. Esta nueva entrada se añadió a la lista de extensiones. Pero hasta que no se apliquen los cambios pulsando Apply Config, esta configuración no quedará guardada. Si la Raspberry Pi es un modelo antiguo (3 o 2) el proceso puede tardar más de un minuto.
 
+![Formulario para la extension](img/freepbx_ext_grupo.png)
+
 ## Softphone
 
 <img src="./img/zoiper_start.jpg" width=170 align="left" />
@@ -80,14 +100,10 @@ Si se obtiene verde en el protocolo UDP, se podrá pasar a añadir una cuenta (a
 
 La configuración es tan simple como colocar la IP de la Raspberry Pi en el campo _Domain_ el user name coincide con la extensión y el _Password_ registrado anteriormente en la consola de administración de FreePBX.
 
-> [!NOTE]
-> Colocar imagen de zoiper funcionando
-
 Cuando la aplicación se conecte con el servidor, aparecerá el símbolo de ok en color verde pudiendo enviar y recibir llamadas.
 
 El registro de todas las llamadas queda reflejado en la parte derecha de la aplicación.
 
-# Casos de prueba
+# Conclusión
 
-> [!NOTE]
-> Completar
+El desarrollo de esta central VoIP implementada sobre Raspberry Pi con Asterisk y FreePBX resultó una solución económica, flexible y de bajo consumo, fácil de administrar vía GUI y compatible con softphones como Zoiper. Además, permitió observar el funcionamiento de distintos protocolos de comunicación y demostrar la viabilidad de montar una central telefónica IP funcional y económica, adecuada tanto para entornos educativos como empresariales de pequeña escala.
