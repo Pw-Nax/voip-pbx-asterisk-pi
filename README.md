@@ -1,13 +1,13 @@
-<center> # Universidad Nacional de Córdoba </center>
+<div align = "center"> 
 
-<center>
+# Universidad Nacional de Córdoba
 
 ## Facultad de Ciencias Exactas, Físicas y Naturales
 
 ### Sistemas de Comunicaciones Telefónicas
 ### **Central Telefónica VoIP con Raspberry Pi**
 
-</center>
+</div>
 
 -------
 
