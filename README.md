@@ -4,8 +4,8 @@
 
 ## Facultad de Ciencias Exactas, Físicas y Naturales
 
-### Sistemas de Comunicaciones Telefónicas.
-### Central Telefónica VoIP con Raspberry Pi.
+### Sistemas de Comunicaciones Telefónicas
+### **Central Telefónica VoIP con Raspberry Pi**
 
 </center>
 
@@ -14,9 +14,13 @@
 ### Grupo: <strong> Transmitiendo Facts </strong>
 
 ### Integrantes:
-  - Integrante 1
-  - Integrante 2
-  - Integrante 3
+  - Airaudo, Andrés
+  - Cabero, Mauro
+  - Mora, Iván
+  - Morán, Mauro
+  - Nuñez, Anna
+  - Testa, Lisandro
+  - Zúñiga, Guillermo Rubén Darío
 
 <div align = "justify">
 
