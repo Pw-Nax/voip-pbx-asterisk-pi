@@ -1,6 +1,6 @@
-<center>
+<center> # Universidad Nacional de Córdoba </center>
 
-# Universidad Nacional de Córdoba
+<center>
 
 ## Facultad de Ciencias Exactas, Físicas y Naturales
 
